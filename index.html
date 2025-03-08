@@ -6,28 +6,125 @@
     <title>Odin Recipes - Delicious African Dishes</title>
 </head>
 <body>
+    <header>
+        <h1>Odin Recipes - Delicious African Dishes</h1>
+        <p>Explore the world's best fried rice, Jollof rice, and Nigerian stew!</p>
+    </header>
+    
+    <!-- Recipe Cards Section -->
+    <section>
+        <div class="recipe-card fried-rice">
+            <h2>Fried Rice</h2>
+            <p>Delicious African-style fried rice.</p>
+            <a href="fried-rice.html">Learn More</a>
+        </div>
+        <div class="recipe-card jollof-rice">
+            <h2>Jollof Rice</h2>
+            <p>The legendary West African classic.</p>
+            <a href="jollof-rice.html">Learn More</a>
+        </div>
+        <div class="recipe-card nigerian-stew">
+            <h2>Nigerian Stew</h2>
+            <p>Rich tomato-based stew with spices.</p>
+            <a href="nigerian-stew.html">Learn More</a>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2025 Odin Recipes | All Rights Reserved</p>
+    </footer>
 
-<!-- Header Section -->
-<header>
-    <h1>Odin Recipes - Delicious African Dishes</h1>
-    <p>Explore the world's best fried rice, Jollof rice, and Nigerian stew!</p>
-</header>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url(/pic/chef\ food.jpg);
+            height: 500px;
+        }
 
-<!-- Recipe Links Section -->
-<section>
-    <h2>Explore Our Recipes</h2>
-    <ul>
-        <li><a href="fried-rice.html">World's Best Fried Rice</a></li>
-        <li><a href="jollof-rice.html">Jollof Rice</a></li>
-        <li><a href="nigerian-stew.html">Nigerian Stew</a></li>
-    </ul>
-</section>
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2025 Odin Recipes | All Rights Reserved</p>
-</footer>
+    
+        section {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            flex-grow: 1;
+        }
 
-</body>
-</html>
+        .recipe-card {
+            width: 200px; 
+            height: 250px;
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+            font-weight: bold;
+            color: rgb(236, 226, 226);
+            position: relative;
+        }
 
+        .recipe-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+            border-radius: 10px;
+        }
+
+        .recipe-card h2, .recipe-card p, .recipe-card a {
+            position: relative;
+            z-index: 2;
+        }
+
+        .recipe-card a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            background: orange;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* let put the background images */
+        .fried-rice {background-image: url(/pic/OIP.jpg);
+        background-size: cover; }
+        .jollof-rice { background-image: url(/pic/food34.jpg); }
+        .nigerian-stew { background-image: url(/pic/nigerian-beef-stew_image_11.webp); }
+
+      
+        footer {
+            padding: 10px;
+            font-size: larger;
+            background-color: #222;
+            text-align: center;
+            color: rgb(245, 242, 242);
+
+        }
+    </style>
+    
+    </body>
+    </html>
